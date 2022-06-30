@@ -145,13 +145,13 @@ int main()
 	Skybox skybox(0);
 	//Shader modelShader("model.vs", "model.fs");
 	Shader modelShader("resources/shader/light_casters.vs", "resources/shader/light_casters.fs");
-	Model skull("resources/objects/skull/skull.obj");
+	//Model skull("resources/objects/skull/skull.obj");
 	Shader shaderBall("resources/shader/pbr.vs", "resources/shader/pbr.fs");
-	Shader skyboxShader1("resources/shader/skybox1.vs", "resources/shader/skybox1.fs");
-	Skybox skybox1(1);
+	//Shader skyboxShader1("resources/shader/skybox1.vs", "resources/shader/skybox1.fs");
+	//Skybox skybox1(1);
 	Shader floorShader("resources/shader/blending.vs", "resources/shader/blending.fs");
 	Shader lightingShader("resources/shader/light_casters.vs", "resources/shader/light_casters.fs");
-	Shader reconShader("resources/shader/recon.vs", "resources/shader/recon.fs");
+	//Shader reconShader("resources/shader/recon.vs", "resources/shader/recon.fs");
 	Shader lightingShader1("resources/shader/light_casters1.vs", "resources/shader/light_casters1.fs");
 
 	floorShader.use();
