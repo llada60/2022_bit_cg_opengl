@@ -146,6 +146,8 @@ int main()
 	//Shader modelShader("model.vs", "model.fs");
 	Shader modelShader("resources/shader/light_casters.vs", "resources/shader/light_casters.fs");
 	Model skull("resources/objects/skull/skull.obj");
+	Model tgms("resources/objects/tgms/tgms.obj");
+
 	Shader shaderBall("resources/shader/pbr.vs", "resources/shader/pbr.fs");
 	Shader skyboxShader1("resources/shader/skybox1.vs", "resources/shader/skybox1.fs");
 	Skybox skybox1(1);
@@ -491,6 +493,34 @@ int main()
 			shaderBall.setMat4("model", model);
 			//renderSphere();
 		}
+		model = glm::mat4(1.0f);
+		model = glm::translate(model, glm::vec3(2.0f, -0.5f, 0.0f)); // translate it down so it's at the center of the scene
+		model = glm::rotate(model, glm::radians(-90.0f), glm::normalize(glm::vec3(1.0, 0.0, 0.0)));
+		model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));	// it's a bit too big for our scene, so scale it down
+		lightingShader.setMat4("model", model);
+		skull.Draw(lightingShader);
+
+		model = glm::mat4(1.0f);
+		model = glm::translate(model, glm::vec3(0.0f, 0.f, 0.0f)); // translate it down so it's at the center of the scene
+		model = glm::rotate(model, glm::radians(0.0f), glm::normalize(glm::vec3(1.0, 0.0, 0.0)));
+		model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));	// it's a bit too big for our scene, so scale it down
+		lightingShader.setMat4("model", model);
+		tgms.Draw(lightingShader);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		//draw skybox at last
 		skyboxShader.use();
