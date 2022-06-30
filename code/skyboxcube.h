@@ -61,12 +61,12 @@ float skyboxVertices[] = {
 
 vector<std::string> faces
 {
-	"resources/textures/hw_sahara/sahara_ft.tga",  //r
-	"resources/textures/hw_sahara/sahara_bk.tga",  //l
-	"resources/textures/hw_sahara/sahara_up.tga",  //u
-	"resources/textures/hw_sahara/sahara_dn.tga",  //d
-	"resources/textures/hw_sahara/sahara_rt.tga",  //f
-	"resources/textures/hw_sahara/sahara_lf.tga"  //b
+	"resources/textures/hw_sahara/TropicalSunnyDay_r.jpg",  //r yes
+	"resources/textures/hw_sahara/TropicalSunnyDay_l.jpg",  //l yes
+	"resources/textures/hw_sahara/TropicalSunnyDay_u.jpg",  //u yes
+	"resources/textures/hw_sahara/TropicalSunnyDay_d.jpg",  //d yes
+	"resources/textures/hw_sahara/TropicalSunnyDay_f.jpg",  //f 
+	"resources/textures/hw_sahara/TropicalSunnyDay_b.jpg"  //b 
 };
 
 vector<std::string> faces1
