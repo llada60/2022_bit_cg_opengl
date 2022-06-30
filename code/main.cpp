@@ -17,7 +17,7 @@
 using namespace irrklang;
 
 ISoundEngine* SoundEngine = createIrrKlangDevice();
-
+//
 // settings
 const unsigned int SCR_WIDTH = 1280;
 const unsigned int SCR_HEIGHT = 720;
@@ -140,6 +140,7 @@ int main()
 
 	// build and compile shaders
 	// -------------------------
+
 	Shader shader("resources/shader/normal_mapping.vs", "resources/shader/normal_mapping.fs");
 	Shader skyboxShader("resources/shader/skybox.vs", "resources/shader/skybox.fs");
 	Skybox skybox(0);
