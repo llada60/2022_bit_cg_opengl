@@ -208,7 +208,7 @@ int main()
 		lightingShader.setMat4("projection", projection);
 		lightingShader.setMat4("view", view);
 
-		// ship: example	右左、上下、后前
+		// ship: example	
 		model = glm::mat4(1.0f);
 		model = glm::translate(model, glm::vec3(1.5f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
 		model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));	
