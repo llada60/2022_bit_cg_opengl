@@ -86,7 +86,7 @@ int main()
 
 	// model
 	// -----
-	Model spaceship1("resources/objects/skull/skull.obj");
+	Model spaceship1("resources/objects/boat1/Boat.obj");
 
 	// lighting info
 	// -------------
@@ -184,8 +184,8 @@ int main()
 		lightingShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
 		lightingShader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));
 		lightingShader.setVec3("light.ambient", 0.1f, 0.1f, 0.1f);
-		lightingShader.setVec3("light.diffuse", 0.8f, 0.8f, 0.8f);
-		lightingShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+		lightingShader.setVec3("light.diffuse", 0.1f, 0.1f, 0.1f);
+		lightingShader.setVec3("light.specular", 0.1f, 0.1f, 0.1f);
 		lightingShader.setFloat("light.constant", 1.0f);
 		lightingShader.setFloat("light.linear", 0.09f);
 		lightingShader.setFloat("light.quadratic", 0.032f);
@@ -196,10 +196,10 @@ int main()
 		lightingShader.setMat4("projection", projection);
 		lightingShader.setMat4("view", view);
 
-		//spaceship
+		// ship: example
 		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(2.0f, -0.5f, 0.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));	
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
+		model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));	
 		lightingShader.setMat4("model", model);
 		spaceship1.Draw(lightingShader);
 
