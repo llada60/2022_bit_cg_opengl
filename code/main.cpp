@@ -32,10 +32,6 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 	glViewport(0, 0, width, height);
 }
 
-
-
-//float inter(float a, float b, float time, float interval);
-
 int main()
 {
 	// glfw: initialize and configure
@@ -90,7 +86,7 @@ int main()
 
 	// model
 	// -----
-	Model spaceship1("resources/objects/spaceship2/spaceship.obj");
+	Model spaceship1("resources/objects/skull/skull.obj");
 
 	// lighting info
 	// -------------
