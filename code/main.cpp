@@ -191,10 +191,10 @@ int main()
 
 		// draw model
 		lightingShader.use();
-		/*lightingShader.setVec3("light.position", camera.Position);
+		lightingShader.setVec3("light.position", camera.Position);
 		lightingShader.setVec3("light.direction", camera.Front);
-		lightingShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
-		lightingShader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));*/
+		/*lightingShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
+		lightingShader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));//-------*/
 		lightingShader.setVec3("light.ambient", 0.8f, 0.8f, 0.8f);
 		lightingShader.setVec3("light.diffuse", 3.8f, 3.8f, 3.8f);
 		lightingShader.setVec3("light.specular", 3.0f, 3.0f, 3.0f);
