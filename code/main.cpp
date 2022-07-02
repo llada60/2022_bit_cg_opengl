@@ -77,6 +77,7 @@ int main()
 	Skybox skybox(0);
 	Shader modelShader("resources/shader/light_casters.vs", "resources/shader/light_casters.fs");
 	Shader lightingShader("resources/shader/light_casters.vs", "resources/shader/light_casters.fs");
+	Shader floorShader("resources/shader/blending.vs", "resources/shader/blending.fs");
 
 	// shader configuration
     // --------------------
@@ -87,15 +88,17 @@ int main()
 	// model
 	// -----
 	Model spaceship1("resources/objects/boat1/Boat.obj");
-	Model spaceship2("resources/objects/boat1/Boat.obj");
-	Model spaceship3("resources/objects/boat1/Boat.obj");
-	Model spaceship4("resources/objects/boat1/Boat.obj");
-	Model spaceship5("resources/objects/boat1/Boat.obj");
-	Model spaceship6("resources/objects/boat1/Boat.obj");
-	Model spaceship7("resources/objects/boat1/Boat.obj");
-	Model spaceship8("resources/objects/boat1/Boat.obj");
-	Model spaceship9("resources/objects/boat1/Boat.obj");
+	//Model spaceship2("resources/objects/boat1/Boat.obj");
+	//Model spaceship3("resources/objects/boat1/Boat.obj");
+	//Model spaceship4("resources/objects/boat1/Boat.obj");
+	//Model spaceship5("resources/objects/boat1/Boat.obj");
+	//Model spaceship6("resources/objects/boat1/Boat.obj");
+	//Model spaceship7("resources/objects/boat1/Boat.obj");
+	//Model spaceship8("resources/objects/boat1/Boat.obj");
+	//Model spaceship9("resources/objects/boat1/Boat.obj");
 	
+	//floor
+	unsigned int floorTexture = loadTexture("resources/textures/floor.jpg");
 
 	// lighting info
 	// -------------
@@ -124,13 +127,13 @@ int main()
     // ------------------------------------------------------------------
 	float planeVertices[] = {
 		// positions          // texture Coords 
-		 5.0f, -0.5f,  5.0f,  2.0f, 0.0f,
-		-5.0f, -0.5f,  5.0f,  0.0f, 0.0f,
-		-5.0f, -0.5f, -5.0f,  0.0f, 2.0f,
+		 1000.0f, -50.5f,  1000.0f,  2.0f, 0.0f,
+		-1000.0f, -50.5f,  1000.0f,  0.0f, 0.0f,
+		-1000.0f, -50.5f, -1000.0f,  0.0f, 2.0f,
 
-		 5.0f, -0.5f,  5.0f,  2.0f, 0.0f,
-		-5.0f, -0.5f, -5.0f,  0.0f, 2.0f,
-		 5.0f, -0.5f, -5.0f,  2.0f, 2.0f
+		 1000.0f, -50.5f,  1000.0f,  2.0f, 0.0f,
+		-1000.0f, -50.5f, -1000.0f,  0.0f, 2.0f,
+		 1000.0f, -50.5f, -1000.0f,  2.0f, 2.0f
 	};
 
 	// plane VAO
@@ -213,54 +216,66 @@ int main()
 		lightingShader.setMat4("model", model);
 		spaceship1.Draw(lightingShader);
 
-		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(8.0f, -4.0f, 2.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(0.25f, 0.25f, 0.25f));//-8.0f, -8.0f, -8.0f
-		lightingShader.setMat4("model", model);
-		spaceship2.Draw(lightingShader);
+		//model = glm::mat4(1.0f);
+		//model = glm::translate(model, glm::vec3(8.0f, -4.0f, 2.0f)); // translate it down so it's at the center of the scene
+		//model = glm::scale(model, glm::vec3(0.25f, 0.25f, 0.25f));//-8.0f, -8.0f, -8.0f
+		//lightingShader.setMat4("model", model);
+		//spaceship2.Draw(lightingShader);
 
-		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(-8.0f, -4.0f, 8.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(0.55f, 0.55f, 0.55f));
-		lightingShader.setMat4("model", model);
-		spaceship3.Draw(lightingShader);
+		//model = glm::mat4(1.0f);
+		//model = glm::translate(model, glm::vec3(-8.0f, -4.0f, 8.0f)); // translate it down so it's at the center of the scene
+		//model = glm::scale(model, glm::vec3(0.55f, 0.55f, 0.55f));
+		//lightingShader.setMat4("model", model);
+		//spaceship3.Draw(lightingShader);
 
-		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(11.0f, 2.0f, 17.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(1.5f, 1.5f, 1.5f));
-		lightingShader.setMat4("model", model);
-		spaceship4.Draw(lightingShader);
+		//model = glm::mat4(1.0f);
+		//model = glm::translate(model, glm::vec3(11.0f, 2.0f, 17.0f)); // translate it down so it's at the center of the scene
+		//model = glm::scale(model, glm::vec3(1.5f, 1.5f, 1.5f));
+		//lightingShader.setMat4("model", model);
+		//spaceship4.Draw(lightingShader);
 
 
-		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(7.0f, -7.0f, 10.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));
-		lightingShader.setMat4("model", model);
-		spaceship5.Draw(lightingShader);
+		//model = glm::mat4(1.0f);
+		//model = glm::translate(model, glm::vec3(7.0f, -7.0f, 10.0f)); // translate it down so it's at the center of the scene
+		//model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));
+		//lightingShader.setMat4("model", model);
+		//spaceship5.Draw(lightingShader);
 
-		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(-6.0f, 0.0f, 8.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));
-		lightingShader.setMat4("model", model);
-		spaceship6.Draw(lightingShader);
+		//model = glm::mat4(1.0f);
+		//model = glm::translate(model, glm::vec3(-6.0f, 0.0f, 8.0f)); // translate it down so it's at the center of the scene
+		//model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));
+		//lightingShader.setMat4("model", model);
+		//spaceship6.Draw(lightingShader);
 
-		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(-2.0f, -2.0f, 10.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(0.07f, 0.07f, 0.07f));
-		lightingShader.setMat4("model", model);
-		spaceship7.Draw(lightingShader);
+		//model = glm::mat4(1.0f);
+		//model = glm::translate(model, glm::vec3(-2.0f, -2.0f, 10.0f)); // translate it down so it's at the center of the scene
+		//model = glm::scale(model, glm::vec3(0.07f, 0.07f, 0.07f));
+		//lightingShader.setMat4("model", model);
+		//spaceship7.Draw(lightingShader);
 
-		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(-8.0f, 3.0f, -4.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(0.54f, 0.54f, 0.54f));
-		lightingShader.setMat4("model", model);
-		spaceship8.Draw(lightingShader);
+		//model = glm::mat4(1.0f);
+		//model = glm::translate(model, glm::vec3(-8.0f, 3.0f, -4.0f)); // translate it down so it's at the center of the scene
+		//model = glm::scale(model, glm::vec3(0.54f, 0.54f, 0.54f));
+		//lightingShader.setMat4("model", model);
+		//spaceship8.Draw(lightingShader);
 
+		//model = glm::mat4(1.0f);
+		//model = glm::translate(model, glm::vec3(-2.0f, -4.0f, -6.0f)); // translate it down so it's at the center of the scene
+		//model = glm::scale(model, glm::vec3(0.25f, 0.25f, 0.25f));
+		//lightingShader.setMat4("model", model);
+		//spaceship9.Draw(lightingShader);
+
+		// floor
+		floorShader.use();
+		projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.01f, 1000.0f);
+		floorShader.setMat4("projection", projection);
+		floorShader.setMat4("view", view);
+		floorShader.setVec3("light.ambient", 0.8f, 0.8f, 0.8f);
+		glBindVertexArray(planeVAO);
+		glBindTexture(GL_TEXTURE_2D, floorTexture);
 		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(-2.0f, -4.0f, -6.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(0.25f, 0.25f, 0.25f));
-		lightingShader.setMat4("model", model);
-		spaceship9.Draw(lightingShader);
+		floorShader.setMat4("model", model);
+		glDrawArrays(GL_TRIANGLES, 0, 6);
 
 
 		//draw skybox at last
