@@ -104,12 +104,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>.\Libraries\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>.\Libraries\Libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>.\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\Libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>.\Libraries\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>.\Libraries\Libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>.\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\Libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>.\Libraries\Include;$(IncludePath)</IncludePath>

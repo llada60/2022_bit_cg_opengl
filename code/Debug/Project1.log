@@ -1,39 +1,32 @@
 ﻿  main.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: “APIENTRY”: 宏重定义
-D:\file_place\code\opengl\one_scene\code\Libraries\Include\glad\glad.h(32): message : 参见“APIENTRY”的前一个定义
-D:\file_place\code\opengl\one_scene\code\texture.h(279,33): warning C4305: “初始化”: 从“double”到“float”截断
-D:\file_place\code\opengl\one_scene\code\texture.h(320,21): warning C4018: “<”: 有符号/无符号不匹配
-D:\file_place\code\opengl\one_scene\code\texture.h(344,51): warning C4244: “参数”: 从“float”转换到“GLsizei”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\texture.h(346,51): warning C4244: “参数”: 从“float”转换到“GLsizei”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\texture.h(348,51): warning C4244: “参数”: 从“float”转换到“GLsizei”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(27,18): warning C4305: “初始化”: 从“double”到“float”截断
-D:\file_place\code\opengl\one_scene\code\main.cpp(42,138): warning C4305: “初始化”: 从“double”到“_Ty”截断
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\Include\glad\glad.h(32): message : 参见“APIENTRY”的前一个定义
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\texture.h(279,33): warning C4305: “初始化”: 从“double”到“float”截断
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\texture.h(320,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\texture.h(344,51): warning C4244: “参数”: 从“float”转换到“GLsizei”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\texture.h(346,51): warning C4244: “参数”: 从“float”转换到“GLsizei”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\texture.h(348,51): warning C4244: “参数”: 从“float”转换到“GLsizei”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\gamecontroller.h(36,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\gamecontroller.h(63,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\gamecontroller.h(64,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\gamecontroller.h(68,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\gamecontroller.h(69,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\gamecontroller.h(71,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\gamecontroller.h(72,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\gamecontroller.h(81,28): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\main.cpp(24,64): warning C4305: “初始化”: 从“double”到“_Ty”截断
           with
           [
               _Ty=float
           ]
-D:\file_place\code\opengl\one_scene\code\main.cpp(43,126): warning C4305: “初始化”: 从“double”到“_Ty”截断
-          with
-          [
-              _Ty=float
-          ]
-D:\file_place\code\opengl\one_scene\code\main.cpp(47,64): warning C4305: “初始化”: 从“double”到“_Ty”截断
-          with
-          [
-              _Ty=float
-          ]
-D:\file_place\code\opengl\one_scene\code\main.cpp(80,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(81,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(85,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(86,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(88,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(89,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(98,28): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(273,19): warning C4244: “参数”: 从“double”转换到“unsigned int”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(280,11): warning C4305: “+=”: 从“double”到“float”截断
-D:\file_place\code\opengl\one_scene\code\main.cpp(283,12): warning C4305: “+=”: 从“double”到“float”截断
-D:\file_place\code\opengl\one_scene\code\main.cpp(287,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(289,18): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(300,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\file_place\code\opengl\one_scene\code\main.cpp(429,19): warning C4305: “+=”: 从“double”到“float”截断
-  Project1.vcxproj -> D:\file_place\code\opengl\one_scene\code\Debug\Project1.exe
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\main.cpp(153,19): warning C4244: “参数”: 从“double”转换到“unsigned int”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\main.cpp(160,11): warning C4305: “+=”: 从“double”到“float”截断
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\main.cpp(163,12): warning C4305: “+=”: 从“double”到“float”截断
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\main.cpp(167,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\file_place\code\opengl\2022_bit_cg_opengl\code\main.cpp(169,18): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+glfw3.lib(input.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(input.obj)”或在“D:\file_place\code\opengl\2022_bit_cg_opengl\code\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(monitor.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(monitor.obj)”或在“D:\file_place\code\opengl\2022_bit_cg_opengl\code\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(window.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(window.obj)”或在“D:\file_place\code\opengl\2022_bit_cg_opengl\code\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_joystick.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(win32_joystick.obj)”或在“D:\file_place\code\opengl\2022_bit_cg_opengl\code\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_window.obj) : warning LNK4099: 未找到 PDB“glfw.pdb”(使用“glfw3.lib(win32_window.obj)”或在“D:\file_place\code\opengl\2022_bit_cg_opengl\code\Debug\glfw.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  Project1.vcxproj -> D:\file_place\code\opengl\2022_bit_cg_opengl\code\Debug\Project1.exe
