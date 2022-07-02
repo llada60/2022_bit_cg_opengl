@@ -110,10 +110,8 @@ int main()
 		// lights	右左、上下、后前
 	// ------
 	glm::vec3 lightPositions[] = {
-		//glm::vec3(0.0f, 0.0f, -3.0f),
-		//glm::vec3(5.0f, 5.0f, 15.0f),
-		//glm::vec3(0.0f, 10.0f, 5.0f),
-		glm::vec3(8.0f, -24.0f, 2.0f),
+		//glm::vec3(8.0f, -24.0f, 2.0f),
+		glm::vec3(8.0f, 4.0f, -8.0f),
 	};
 	glm::vec3 lightColors[] = {
 		glm::vec3(150.0f, 150.0f, 150.0f),
@@ -196,8 +194,8 @@ int main()
 		/*lightingShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
 		lightingShader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));//-------*/
 		lightingShader.setVec3("light.ambient", 0.8f, 0.8f, 0.8f);
-		lightingShader.setVec3("light.diffuse", 3.8f, 3.8f, 3.8f);
-		lightingShader.setVec3("light.specular", 3.0f, 3.0f, 3.0f);
+		lightingShader.setVec3("light.diffuse", 3.4f, 3.4f, 3.4f);
+		lightingShader.setVec3("light.specular", 2.0f, 2.0f, 2.0f);
 		lightingShader.setFloat("light.constant", 1.0f);
 		lightingShader.setFloat("light.linear", 0.09f);
 		lightingShader.setFloat("light.quadratic", 0.032f);
@@ -210,8 +208,8 @@ int main()
 
 		// ship: example	
 		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(1.5f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
-		model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));	
+		model = glm::translate(model, glm::vec3(4.5f, 0.0f, -6.0f)); // translate it down so it's at the center of the scene
+		model = glm::scale(model, glm::vec3(0.15f, 0.15f, 0.15f));	
 		lightingShader.setMat4("model", model);
 		spaceship1.Draw(lightingShader);
 
