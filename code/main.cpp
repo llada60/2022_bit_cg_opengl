@@ -98,7 +98,7 @@ int main()
 	//Model spaceship9("resources/objects/boat1/Boat.obj");
 	
 	//floor
-	unsigned int floorTexture = loadTexture("resources/textures/floor.jpg");
+	unsigned int floorTexture = loadTexture("resources/textures/floor.tga");
 
 	// lighting info
 	// -------------
@@ -196,8 +196,8 @@ int main()
 		lightingShader.setVec3("light.direction", camera.Front);
 		/*lightingShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
 		lightingShader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));//-------*/
-		lightingShader.setVec3("light.ambient", 0.8f, 0.8f, 0.8f);
-		lightingShader.setVec3("light.diffuse", 3.4f, 3.4f, 3.4f);
+		lightingShader.setVec3("light.ambient", 2.8f, 2.8f, 2.8f);
+		lightingShader.setVec3("light.diffuse", 2.4f, 2.4f, 2.4f);
 		lightingShader.setVec3("light.specular", 2.0f, 2.0f, 2.0f);
 		lightingShader.setFloat("light.constant", 1.0f);
 		lightingShader.setFloat("light.linear", 0.09f);
@@ -266,11 +266,12 @@ int main()
 		//spaceship9.Draw(lightingShader);
 
 		// floor
+
 		floorShader.use();
 		projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.01f, 1000.0f);
 		floorShader.setMat4("projection", projection);
 		floorShader.setMat4("view", view);
-		floorShader.setVec3("light.ambient", 0.8f, 0.8f, 0.8f);
+		floorShader.setVec3("light.ambient", 0.7f, 0.7f, 0.7f);
 		glBindVertexArray(planeVAO);
 		glBindTexture(GL_TEXTURE_2D, floorTexture);
 		model = glm::mat4(1.0f);
