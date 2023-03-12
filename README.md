@@ -2,6 +2,8 @@
 
 本项目是BIT 2022年图形学课程的期末大作业。
 
+开发环境：Microsoft Visual Studio 2022 + OpenGL
+
 ## 一、项目介绍
 
 ### 1、场景介绍
@@ -62,4 +64,4 @@
 
 ## 二、XML类图及主要方法注释
 
-![img](https://uploader.shimo.im/f/u4tIY9e7FBrQY9AY.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NTY4NDU3MTIsImZpbGVHVUlEIjoiS3JrRVZFNWw1eUNMUFZBSiIsImlhdCI6MTY1Njg0NTQxMiwidXNlcklkIjo1Mzc3Njc4MX0.kUyu9AIL8JdcSbobTZesimycEg6DyGFA-QS3pT1v_eg)
+<img width="764" alt="image" src="https://user-images.githubusercontent.com/78467774/224548375-8c96c33f-82cd-49d7-8851-936ea0d35084.png">
